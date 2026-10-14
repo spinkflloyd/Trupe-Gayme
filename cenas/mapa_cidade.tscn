@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cpcx4jp424ir3"]
+
+[ext_resource type="Texture2D" path="res://kenney_tiny-town/Tilemap/tilemap_packed.png" id="1_xa57n"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_377ly"]
+texture = ExtResource("1_xa57n")
+
+[sub_resource type="TileSet" id="TileSet_mbmut"]
+sources/0 = SubResource("TileSetAtlasSource_377ly")
+
+[node name="MapaCidade" type="Node2D" unique_id=1632911139]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1115191421]
+tile_set = SubResource("TileSet_mbmut")
